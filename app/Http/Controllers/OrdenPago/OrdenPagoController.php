@@ -7,7 +7,7 @@ use App\Models\OrdenPago\OrdenPago;
 use App\Http\Requests\StoreOrdenPagoRequest;
 use App\Http\Requests\UpdateOrdenPagoRequest;
 
-class OrdenPago extends Controller
+class OrdenPagoController extends Controller
 {
     /**
      * Display a listing of the resource.
