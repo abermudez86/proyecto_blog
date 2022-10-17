@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Comprobante;
 
 use App\Http\Controllers\Controller;
 use App\Models\Comprobante\ComprobanteDetalle;
-use App\Http\Requests\StoreComprobanteDetalleRequest;
-use App\Http\Requests\UpdateComprobanteDetalleRequest;
+use App\Http\Requests\Comprobante\StoreComprobanteDetalleRequest;
+use App\Http\Requests\Comprobante\UpdateComprobanteDetalleRequest;
 
 class ComprobanteDetalleController extends Controller
 {

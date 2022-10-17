@@ -4,8 +4,8 @@ namespace App\Http\Controllers\OrdenPago;
 
 use App\Http\Controllers\Controller;
 use App\Models\OrdenPago\OrdenPago;
-use App\Http\Requests\StoreOrdenPagoRequest;
-use App\Http\Requests\UpdateOrdenPagoRequest;
+use App\Http\Requests\OrdenPago\StoreOrdenPagoRequest;
+use App\Http\Requests\OrdenPago\UpdateOrdenPagoRequest;
 
 class OrdenPagoController extends Controller
 {

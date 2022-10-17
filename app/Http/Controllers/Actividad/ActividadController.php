@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Actividad;
 
 use App\Http\Controllers\Controller;
 use App\Models\Actividad\Actividad;
-use App\Http\Requests\StoreActividadRequest;
-use App\Http\Requests\UpdateActividadRequest;
+use App\Http\Requests\Actividad\StoreActividadRequest;
+use App\Http\Requests\Actividad\UpdateActividadRequest;
 
 class ActividadController extends Controller
 {

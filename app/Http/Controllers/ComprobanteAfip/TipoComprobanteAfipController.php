@@ -4,8 +4,8 @@ namespace App\Http\Controllers\ComprobanteAfip;
 
 use App\Http\Controllers\Controller;
 use App\Models\ComprobanteAfip\TipoComprobanteAfip;
-use App\Http\Requests\StoreTipoComprobanteAfipRequest;
-use App\Http\Requests\UpdateTipoComprobanteAfipRequest;
+use App\Http\Requests\ComprobanteAfip\StoreTipoComprobanteAfipRequest;
+use App\Http\Requests\ComprobanteAfip\UpdateTipoComprobanteAfipRequest;
 
 class TipoComprobanteAfipController extends Controller
 {

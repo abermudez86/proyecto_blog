@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Actividad;
 
 use App\Http\Controllers\Controller;
 use App\Models\Actividad\ActividadParticipante;
-use App\Http\Requests\StoreActividadParticipanteRequest;
-use App\Http\Requests\UpdateActividadParticipanteRequest;
+use App\Http\Requests\Actividad\StoreActividadParticipanteRequest;
+use App\Http\Requests\Actividad\UpdateActividadParticipanteRequest;
 
 class ActividadParticipanteController extends Controller
 {

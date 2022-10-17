@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Alicuota;
 
 use App\Http\Controllers\Controller;
 use App\Models\Alicuota\AlicuotaAfip;
-use App\Http\Requests\StoreAlicuotaAfipRequest;
-use App\Http\Requests\UpdateAlicuotaAfipRequest;
+use App\Http\Requests\Alicuota\StoreAlicuotaAfipRequest;
+use App\Http\Requests\Alicuota\UpdateAlicuotaAfipRequest;
 
 class AlicuotaAfipController extends Controller
 {
