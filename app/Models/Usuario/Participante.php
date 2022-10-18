@@ -8,4 +8,13 @@ use App\Models\BaseModel;
 class Participante extends BaseModel
 {
     public $table = "participantes";
+
+    protected $primaryKey = 'id';
+
+    protected $fillable  = [
+        'id',
+        'name',
+        'email',
+        'estado',
+    ];
 }

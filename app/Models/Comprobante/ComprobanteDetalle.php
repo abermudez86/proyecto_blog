@@ -16,4 +16,20 @@ class ComprobanteDetalle extends BaseModel
 
     const CREATED_AT = 'fecha_creacion';
     const UPDATED_AT = 'fecha_modificacion';
+
+    protected $fillable  = [
+        'id_comprobante',
+        'renglon',
+        'tipo_codigo', //'ORD'
+        'codigo',     //'id_orden_pago'
+        'fecha',
+        'monto',
+        'id_alicuota',
+        'usuario_creacion',
+        'fecha_creacion',
+        'estado',
+        'fecha_modificacion',
+        'usuario_modificacion',
+    ];
+
 }

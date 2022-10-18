@@ -15,7 +15,7 @@ class BaseModel extends Model
 
     public $timestamps = false;
 
-    public $dateFormat = 'Y-m-d H:m:s';
+    //public $dateFormat = 'Y-m-d H:m:s';
 
     protected $UseCreatedUser = false;
 
@@ -29,13 +29,13 @@ class BaseModel extends Model
 
     protected $dateFilter = null;
 
-    protected $createdUser = 'id_persona_creacion';
+    protected $createdUser = 'usuario_creacion';
 
-    protected $updatedUser = 'id_persona';
+    protected $updatedUser = 'usuario_modificacion';
 
     protected $created_at = 'fecha_creacion';
 
-    protected $updated_at = 'fecha_movimiento';
+    protected $updated_at = 'fecha_modificacion';
 
     public function getCodeService()
     {
