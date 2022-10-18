@@ -3,11 +3,11 @@
 namespace App\Models\Alicuota;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class Alicuota extends Model
+class Alicuota extends BaseModel
 {
-    use HasFactory;
+
     protected $table = "alicuotas";
     //protected $fillable  = ['descripcion','codigo_afip','estado'];
 

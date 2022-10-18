@@ -3,9 +3,9 @@
 namespace App\Models\OrdenPago;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class PagoPendiente extends Model
+class PagoPendiente extends BaseModel
 {
-    use HasFactory;
+
 }

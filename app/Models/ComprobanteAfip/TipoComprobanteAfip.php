@@ -3,11 +3,11 @@
 namespace App\Models\ComprobanteAfip;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class TipoComprobanteAfip extends Model
+class TipoComprobanteAfip extends BaseModel
 {
-    use HasFactory;
+
 
     public $table = "tipos_comprobante_afip";
 

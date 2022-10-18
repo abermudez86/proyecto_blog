@@ -4,13 +4,13 @@ namespace App\Models\Comprobante;
 
 use Thiagoprz\CompositeKey\HasCompositeKey;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class ComprobanteDetalle extends Model
+class ComprobanteDetalle extends BaseModel
 {
-    use HasFactory; use HasCompositeKey;
+     use HasCompositeKey;
 
-    protected $table = "comprobantes_detalle";
+    protected $table = "comprobante_detalles";
 
     protected $primaryKey = ['id_comprobante', 'renglon'];
 

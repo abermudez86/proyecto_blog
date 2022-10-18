@@ -2,12 +2,11 @@
 
 namespace App\Models\Actividad;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class ActividadParticipante extends Model
+class ActividadParticipante extends BaseModel
 {
-    use HasFactory;
+
 
     protected $table = "actividades_participantes";
 

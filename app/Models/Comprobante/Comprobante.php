@@ -3,11 +3,11 @@
 namespace App\Models\Comprobante;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class Comprobante extends Model
+class Comprobante extends BaseModel
 {
-    use HasFactory;
+
 
     protected $table = "comprobantes";
 

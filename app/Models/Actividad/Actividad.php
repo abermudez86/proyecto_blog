@@ -2,13 +2,10 @@
 
 namespace App\Models\Actividad;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class Actividad extends Model
+class Actividad extends BaseModel
 {
-    use HasFactory;
-
     protected $table = "actividades";
 
     const CREATED_AT = 'fecha_creacion';

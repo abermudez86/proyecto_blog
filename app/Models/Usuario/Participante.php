@@ -3,11 +3,9 @@
 namespace App\Models\Usuario;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class Participante extends Model
+class Participante extends BaseModel
 {
-    use HasFactory;
-
     public $table = "participantes";
 }
