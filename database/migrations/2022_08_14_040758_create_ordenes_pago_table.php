@@ -42,7 +42,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('comprobantes_detalle');
         Schema::dropIfExists('ordenes_pago');
     }
 };
