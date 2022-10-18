@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('comprobantes_detalle', function (Blueprint $table) {
+        Schema::create('comprobante_detalles', function (Blueprint $table) {
             $table->integer('id_comprobante');
             $table->integer('renglon');
             $table->string('tipo_codigo'); //'ORD'
@@ -50,7 +50,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('comprobantes_detalle');
+        Schema::dropIfExists('comprobante_detalles');
     }
 
 };

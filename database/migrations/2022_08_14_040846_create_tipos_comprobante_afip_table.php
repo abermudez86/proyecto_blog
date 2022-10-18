@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tipos_comprobante_afip', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_tipo_comprobante');
             $table->string('tipo_comprobante',4)->nullable();
             $table->string('tipo_letra',4)->nullable();
             $table->string('descripcion',250);

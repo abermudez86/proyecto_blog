@@ -13,20 +13,25 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('actividades', function (Blueprint $table) {
-            $table->integer('id_actividad');
-            $table->string('descripcion');
-            $table->datetime('fecha_inicio');
-            $table->integer('periodo_pago'); //en dias (cada semana, cada mes)
-            $table->integer('total_pagos');  //cantidad de pagos totales
-            $table->decimal('monto',12,4)->default(0.0);
+        Schema::create('comprobante_pagos', function (Blueprint $table) {
+            $table->id('id_comprobante_pago');
+            $table->int('id_comprobante');
+            $table->int('id_metodo_pago');
+            $table->string('codigo_tarjeta');
+            $table->int('id_moneda');
+            $table->decimal('cotizacion');
+            $table->decimal('monto');
+            $table->varchar('comprobante_externo');
+            $table->varchar('comentarios');
             $table->unsignedBigInteger('usuario_creacion');
             $table->datetime('fecha_creacion');
             $table->string('estado')->default('A');
             $table->datetime('fecha_modificacion');
             $table->unsignedBigInteger('usuario_modificacion');
 
-            $table->primary('id_actividad');
+            $table->index('id_comprobante');
+            $table->index('id_metodo_pago');
+            $table->index('comprobante_externo');
             $table->foreign('usuario_creacion')->references('id')->on('users');
             $table->foreign('usuario_modificacion')->references('id')->on('users');
 
@@ -40,6 +45,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('actividades');
+        Schema::dropIfExists('comprobante_pagos');
     }
 };
