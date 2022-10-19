@@ -11,6 +11,8 @@ class TipoComprobanteAfip extends BaseModel
 
     protected $primaryKey = 'id_tipo_comprobante';
 
+    public $timestamps = true;
+
     const CREATED_AT = 'fecha_creacion';
     const UPDATED_AT = 'fecha_modificacion';
 

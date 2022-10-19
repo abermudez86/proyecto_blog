@@ -15,10 +15,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('usuario_datos', function (Blueprint $table) {
-            $table->integer('id_user');
+            $table->unsignedBigInteger('id_user');
             $table->string('nombre');
             $table->string('apellido');
-            $table->integer('id_tipo_documento');
+            $table->unsignedBigInteger('id_tipo_documento');
             $table->string('numero_documento');
             $table->string('email');
             $table->string('telefono');
@@ -29,8 +29,8 @@ return new class extends Migration
 
             $table->primary('id_user');
             $table->foreign('id_user')->references('id')->on('users');
-            $table->foreign('id_tipo_documento')->references('id_tipo_documento')->on('tipo_documento');
             $table->foreign('usuario_modificacion')->references('id')->on('users');
+            $table->foreign('id_tipo_documento')->references('id_tipo_documento')->on('tipos_documento');
 
         });
     }
@@ -42,7 +42,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('actividades');
+        Schema::dropIfExists('usuario_datos');
     }
 
 };

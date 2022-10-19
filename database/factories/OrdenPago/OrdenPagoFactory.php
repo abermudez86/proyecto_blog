@@ -1,21 +1,21 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\OrdenPago;
 
-use App\Models\Comprobante\Comprobante;
+use App\Models\OrdenPago\OrdenPago;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Comprobante\Comprobante>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\OrdenPago\OrdenPago>
  */
-class ComprobanteFactory extends Factory
+class OrdenPagoFactory extends Factory
 {
     /**
      * Define the model's default state.
      *
      * @return array<string, mixed>
      */
-    protected $model = Comprobante::class;
+    protected $model = OrdenPago::class;
 
     public function definition()
     {

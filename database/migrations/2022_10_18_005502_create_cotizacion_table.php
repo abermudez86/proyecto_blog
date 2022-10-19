@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('cotizaciones', function (Blueprint $table) {
             $table->id('id_cotizacion');
-            $table->int('id_moneda');
+            $table->unsignedBigInteger('id_moneda');
             $table->decimal('cotizacion');
             $table->datetime('fecha_cotizacion');
 

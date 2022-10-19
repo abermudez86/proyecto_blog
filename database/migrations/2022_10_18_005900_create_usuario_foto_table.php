@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('usuarios_foto', function (Blueprint $table) {
             $table->id('id_usuario_foto');
             $table->unsignedBigInteger('id_usuario');
-            $table->int('id_foto');
+            $table->unsignedBigInteger('id_foto');
 
 
             $table->foreign('id_usuario')->references('id')->on('users');

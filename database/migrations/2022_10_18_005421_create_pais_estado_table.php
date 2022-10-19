@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('pais_estados', function (Blueprint $table) {
             $table->id('id_estado');
-            $table->int('id_pais');
+            $table->unsignedBigInteger('id_pais');
             $table->string('codigo');
             $table->string('descripcion');
             $table->string('telefono_extension');

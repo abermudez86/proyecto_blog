@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('localidades', function (Blueprint $table) {
             $table->id('id_localidad');
-            $table->int('id_estado');
+            $table->unsignedBigInteger('id_estado');
             $table->string('codigo');
             $table->string('descripcion');
             $table->string('telefono_extension');

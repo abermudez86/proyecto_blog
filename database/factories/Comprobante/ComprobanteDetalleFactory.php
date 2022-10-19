@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\Comprobante;
 
 use App\Models\Comprobante\ComprobanteDetalle;
 use Illuminate\Database\Eloquent\Factories\Factory;

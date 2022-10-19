@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('fotos', function (Blueprint $table) {
             $table->id('id_foto');
             $table->string('extension');
-            $table->image('content');
+            $table->binary('content');
         });
     }
 

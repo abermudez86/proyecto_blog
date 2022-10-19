@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('user_address', function (Blueprint $table) {
+        Schema::create('usuarios_domicilio', function (Blueprint $table) {
             $table->id('id_direccion');
             $table->unsignedBigInteger('id_usuario');
             $table->string('principal');
-            $table->id('id_pais');
-            $table->id('id_estado');
+            $table->unsignedBigInteger('id_pais');
+            $table->unsignedBigInteger('id_estado');
             $table->string('CPA');
-            $table->id('direccion');
+            $table->string('direccion');
             $table->unsignedBigInteger('usuario_creacion');
             $table->datetime('fecha_creacion');
             $table->string('estado')->default('A');
@@ -42,6 +42,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_address');
+        Schema::dropIfExists('usuarios_domicilio');
     }
 };

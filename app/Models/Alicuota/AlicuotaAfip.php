@@ -12,6 +12,8 @@ class AlicuotaAfip extends BaseModel
 
     protected $primaryKey = 'id_alicuota';
 
+    public $timestamps = true;
+
     const CREATED_AT = 'fecha_creacion';
     const UPDATED_AT = 'fecha_modificacion';
 

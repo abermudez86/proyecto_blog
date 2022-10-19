@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('comprobantes', function (Blueprint $table) {
-            $table->integer('id_comprobante');
-            $table->integer('id_tipo_comprobante');
+            $table->id('id_comprobante');
+            $table->unsignedBigInteger('id_tipo_comprobante');
             $table->unsignedBigInteger('id_participante');
             $table->decimal('monto_total',12,4)->default(0.0);
             $table->decimal('iva',12,4)->default(0);
@@ -26,12 +26,11 @@ return new class extends Migration
             $table->datetime('fecha_modificacion');
             $table->unsignedBigInteger('usuario_modificacion');
 
-            $table->primary('id_comprobante');
             $table->index('id_tipo_comprobante');
-            $table->foreign('id_tipo_comprobante')->references('id_tipo_comprobante')->on('tipos_comprobante_afip');
             $table->foreign('id_participante')->references('id')->on('users');
             $table->foreign('usuario_creacion')->references('id')->on('users');
             $table->foreign('usuario_modificacion')->references('id')->on('users');
+            $table->foreign('id_tipo_comprobante')->references('id_tipo_comprobante')->on('tipos_comprobante_afip');
         });
     }
 

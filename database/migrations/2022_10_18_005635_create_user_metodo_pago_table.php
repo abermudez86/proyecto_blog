@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('usuario_metodo_pago', function (Blueprint $table) {
             $table->id('id_usuario_metodo_pago');
             $table->string('nombre_tarjeta');
-            $table->int('id_metodo_pago');
+            $table->unsignedBigInteger('id_metodo_pago');
             $table->string('codigo_tarjeta');
             $table->string('nombre');
             $table->datetime('fecha_vencimiento');

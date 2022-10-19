@@ -15,14 +15,14 @@ return new class extends Migration
     {
         Schema::create('comprobante_pagos', function (Blueprint $table) {
             $table->id('id_comprobante_pago');
-            $table->int('id_comprobante');
-            $table->int('id_metodo_pago');
+            $table->unsignedBigInteger('id_comprobante');
+            $table->unsignedBigInteger('id_metodo_pago');
             $table->string('codigo_tarjeta');
-            $table->int('id_moneda');
+            $table->unsignedBigInteger('id_moneda');
             $table->decimal('cotizacion');
             $table->decimal('monto');
-            $table->varchar('comprobante_externo');
-            $table->varchar('comentarios');
+            $table->string('comprobante_externo');
+            $table->string('comentarios');
             $table->unsignedBigInteger('usuario_creacion');
             $table->datetime('fecha_creacion');
             $table->string('estado')->default('A');

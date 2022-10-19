@@ -13,8 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tipo_documento', function (Blueprint $table) {
-            $table->id('tipo_documento');
+        Schema::create('tipos_documento', function (Blueprint $table) {
+            $table->id('id_tipo_documento');
             $table->string('descripcion');
             $table->string('codigo_afip');
             $table->unsignedBigInteger('usuario_creacion');
@@ -35,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tipo_documento');
+        Schema::dropIfExists('tipos_documento');
     }
 };

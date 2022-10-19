@@ -12,7 +12,7 @@ class CreatePermissionTables extends Migration
      *
      * @return void
      */
-    public function up()
+    /*public function up()
     {
         $tableNames = config('permission.table_names');
         $columnNames = config('permission.column_names');
@@ -124,7 +124,7 @@ class CreatePermissionTables extends Migration
      *
      * @return void
      */
-    public function down()
+    /*public function down()
     {
         $tableNames = config('permission.table_names');
 
@@ -138,4 +138,5 @@ class CreatePermissionTables extends Migration
         Schema::drop($tableNames['roles']);
         Schema::drop($tableNames['permissions']);
     }
+    */
 }
